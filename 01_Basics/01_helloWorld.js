@@ -1,0 +1,1 @@
+console.log("Hello World") //Basic Syntax of JavaScript

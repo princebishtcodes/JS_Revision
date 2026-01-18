@@ -1,0 +1,78 @@
+🌐 What is the DOM?
+DOM (Document Object Model) represents an HTML document as a tree structure.
+Each element (like <p>, <div>, <button>, etc.) is a node that can be accessed and manipulated using JavaScript.
+
+🧭 Types of DOM Selectors
+1. getElementById()
+Syntax: document.getElementById("idName")
+Description: Selects one element with the specified ID.
+Example:
+
+let heading = document.getElementById("main-title");
+heading.style.color = "blue";
+Returns: A single element or null if not found.
+
+2. getElementsByClassName()
+Syntax: document.getElementsByClassName("className")
+Description: Selects all elements with the given class name.
+Example:
+
+let boxes = document.getElementsByClassName("box");
+boxes[0].style.background = "yellow";
+Returns: An HTMLCollection (live list – updates automatically if DOM changes).
+** Array.from(), can be used to convert the HTMLCollection or Listnode to Array.
+
+3. getElementsByTagName()
+Syntax: document.getElementsByTagName("tagName")
+Description: Selects all elements with the specified HTML tag.
+Example:
+
+let paragraphs = document.getElementsByTagName("p");
+console.log(paragraphs.length);
+Returns: An HTMLCollection.
+
+4. getElementsByName()
+Syntax: document.getElementsByName("name")
+Description: Selects elements with the given name attribute (commonly used with forms).
+Example:
+
+let inputs = document.getElementsByName("username");
+inputs[0].value = "Prince";
+Returns: A NodeList.
+
+🌟 Modern & Powerful Selectors
+
+5. querySelector()
+Syntax: document.querySelector("CSS_Selector")
+Description: Returns the first element that matches the CSS selector.
+Example:
+
+let firstBox = document.querySelector(".box");
+firstBox.style.border = "2px solid red";
+
+Supports:
+ID (#id)
+Class (.class)
+Tag (div, p, etc.)
+Attribute selectors (input[type="text"])
+Complex selectors (div > p, .container .item:first-child, etc.)
+Returns: A single Element or null if not found.
+
+✅ Advantages:
+Uses CSS-style syntax (very flexible)
+Easier and shorter than older methods
+Can combine multiple conditions
+
+6. querySelectorAll()
+Syntax: document.querySelectorAll("CSS_Selector")
+Description: Returns all elements that match the CSS selector.
+Example:
+
+let allBoxes = document.querySelectorAll(".box");
+allBoxes.forEach(box => box.style.background = "lightblue");
+Returns: A NodeList (static – does not update automatically if DOM changes).
+
+✅ Advantages:
+Supports all CSS selectors
+Works with loops using forEach()
+Ideal for modern DOM manipulation
