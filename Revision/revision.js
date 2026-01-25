@@ -137,3 +137,28 @@
 // // for(const key in object){
 // //     console.log(`The key is ${key} and value is ${object(key)}`)
 // // }
+
+// Practice Question on Objects
+
+const response = {
+    status: 200,
+    data: {
+        user: {
+            name: "Priyanshu",
+            stats: {
+                followers: 120,
+                posts: 15
+            }
+        }
+    }
+};
+
+// Extract names, followers, rename posts to totalPosts
+
+const {
+    data: { user: { name, stats: { followers, posts: totalPosts } } }
+} = response;
+
+console.log(name);
+console.log(followers);
+console.log(totalPosts);
