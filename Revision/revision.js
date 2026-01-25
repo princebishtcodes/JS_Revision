@@ -127,7 +127,7 @@
 // // in Maps const map1 = new Map();
 // // for (const [key, value] of map1) {
 // //     console.log(key, value);
-    
+
 // // }
 
 // // for of is majorly used for arrays and maps
