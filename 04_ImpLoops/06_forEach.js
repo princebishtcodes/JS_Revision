@@ -11,14 +11,15 @@ const myHeros = ["Captain America", "Iron Man", "Thor", "Hulk"];
 //     console.log(myHeros);
 }  )*/
 
-// For IIFE Function callback
+// For Arrow Function callback
 // myHeros.forEach( (val) => {
-//     console.log(myHeros);
-    
+//     console.log(myHeros);    
 // } )
+
 // myHeros.forEach(  function (item) {
 //     console.log(myHeros);
 // }  )
+
 // For Predefined Function
 function callMe(item) {
     // console.log(item)
