@@ -159,6 +159,12 @@ const {
     data: { user: { name, stats: { followers, posts: totalPosts } } }
 } = response;
 
-console.log(name);
-console.log(followers);
-console.log(totalPosts);
+// console.log(name);
+// console.log(followers);
+// console.log(totalPosts);
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+arr.forEach((items, index) => {
+    // console.log(items, index);
+})
