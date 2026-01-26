@@ -168,3 +168,32 @@ const arr = [1, 2, 3, 4, 5, 6, 7, 8];
 arr.forEach((items, index) => {
     // console.log(items, index);
 })
+
+const marvelHeroes = [
+    {
+        Name: "Steve Rogers",
+        Role: "Captain America",
+        Actor: "Chris Evans"
+    },
+    {
+        Name: "Tony Stark",
+        Role: "Iron Man",
+        Actor: "Robert Downey Jr"
+    }, {
+        Name: "Thor Odinson",
+        Role: "Thor",
+        Actor: "Chris Hemsworth"
+    }, {
+        Name: "Bruce Banner",
+        Role: "Hulk",
+        Actor: "Mark Ruffalo"
+    }, {
+        Name: "Peter Parker",
+        Role: "Spiderman",
+        Actor: "Tom Holland"
+    }
+];
+
+marvelHeroes.forEach((items) => {
+    // console.log(items.Actor);
+})
