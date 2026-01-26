@@ -38,7 +38,7 @@ const myTotal = numbers.reduce(  function(acc, currval) {
     return acc+currval}, 0  );
 
 // console.log(myTotal);
-// IIFE Function
+// Arrow Function
 const myArr = [1,2,3,4,5];
 const myTotal1 = myArr.reduce(
     (acc1, currval1) => {return acc1+currval1}, 0  )
